@@ -1,0 +1,248 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,423&display=swap" rel="stylesheet');
+@font-face{
+	font-family: 'FonteLogo';
+	src: url("../_fontes/JosefinSans-Italic-VariableFont_wght.ttf");
+}
+body {
+	font-family: Arial;
+	background-color: white;
+	color: rgba(1,1,1,1);
+}
+/*div#interface {
+	width: 900px;
+	background-color: #ffffff;
+	margin: 0px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 40px 10px 10px 10px;
+}*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+p {
+	display: flex;
+	font-size: 16px;
+	text-align: justify;
+	text-indent: 50px;
+	padding: 10px;
+	margin: 5px;
+	font-family: 'Tahoma';
+	line-height: 22px;
+}
+a {
+	color: #606060;
+	text-decoration: none;
+	font-size: 12pt;
+}
+a:hover {
+	text-decoration: underline;
+}
+img#icone {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 1000px;
+	top: 82px;
+	display: inline-grid;
+	max-width: 1000px;
+}
+article#assunto h2{
+	color: #606060;
+	padding: 5px 0px 10px 15px;
+	margin: 15px 0px 15px 0px;
+}
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-size: cover;
+	padding: 10px;
+
+}
+header#cabecalho {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+}
+header#cabecalho-artg {
+	display: flex;
+	flex-direction: column;
+}
+div#topo h1 {
+	font-family: 'FonteLogo', cursive;
+	font-size: 18pt;
+	color: #000000;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	padding: 0px;
+	margin-bottom: 0px;
+	font-variant: small-caps;
+	 /* DEIXA TODAS AS LETRAS COM TAMANHO GRANDE*/
+}
+div#topo h2 {
+	font-family: Arial, sans-serif;
+	color: #000000;
+	font-size: 18pt;
+	padding: 2px;
+	margin-top: 0px;
+}
+header#cabecalho-artg h1{
+	font-family: arial, sans-serif;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-size: 15pt;
+	color: #595150;
+	text-align: center;
+	display: flex;*
+}
+header#cabecalho-artg h2 {
+	font-size: 13pt;
+	color: #91b3c9;
+	margin: 0px;
+} 
+header#cabecalho-artg h3 {
+	font-size: 15pt;
+	color: #5d7687;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.direita {
+	border-bottom: 1px #606060 solid;
+}
+header#cabecalho h1{
+	font-family: 'FonteLogo', cursive;
+	font-size: 26pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	padding: 0px;
+	margin-top: 90px;
+}
+header#cabecalho h2{
+	font-family: 'Josefin Web', cursive;
+	font-size: 17pt;
+	color: #606060;
+	padding: 0px;
+	margin-top: 0px;
+}
+/* Formatação do H2*/
+div#titu h2{
+	color: black;
+	display: inline-block;
+	margin: 3px;
+	padding: 9px;
+	font-weight: bolder;
+}
+/* IMAGENS*/
+img#icone {
+	left: 1000px;
+	display: inline-block;
+	width: 300px;
+}
+/* 
+Formatação do Menu
+*/
+nav {	
+	display:flex;
+	flex-direction: column;
+	width: 100%;
+
+}
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	width: 100%;
+}
+nav#menu li {
+	display: flex;
+	margin-left: 120px;
+	text-align: center;
+	background-color: white;
+	padding: 10px 10px 10px 10px;
+	transition: background-color 1s;
+}
+nav#menu li:hover {
+	background-color: #dddddd;
+}
+nav#menu a {
+	display: flex;
+	padding: 10px 0;
+	width: 100%;
+	color: #000000;
+	text-decoration: none;
+}
+nav#menu a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}	
+/* 
+
+Roda pé
+
+*/
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+}
+footer#rodape p {
+	text-align: center;
+}
+.tipo1 {
+	color:rgb(100.100.100);
+}
+.link_ {
+	font-size: 30px;
+}
+.tipo2 {
+	font-size: 40px;
+}
+/*
+Deixando o site responsivo*/
+@media screen and (max-width: 768px) {
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+		width: 70%;
+		top: 10px;
+	}
+	nav ul li a {
+		flex-direction: row
+		width: 100%;
+
+	}
+	header {
+		height: 15px;
+		height: 15vh;
+		justify-content: center;
+
+	}
+}
+@media screen and (max-width:1000px) {
+	img#icone {
+		position: relative;
+		left: 600px;
+		top: 60px;
+
+	}
+}
+@media screen and (max-width:1000px){
+		nav ul li {
+			display: block;
+			flex-direction: column;
+			padding: 0px;
+			margin-left: 0px;
+		}
+}
+@media screen and (max-width:768px) {
+	header#cabecalho {
+		width: 100%;
+
+	}
+}
