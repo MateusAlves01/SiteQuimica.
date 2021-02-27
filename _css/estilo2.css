@@ -38,15 +38,6 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-img#icone {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	left: 1000px;
-	top: 82px;
-	display: inline-grid;
-	max-width: 1000px;
-}
 article#assunto h2{
 	color: #606060;
 	padding: 5px 0px 10px 15px;
@@ -64,7 +55,7 @@ header#cabecalho {
 	display: flex;
 	flex-direction: column;
 	border-bottom: 1px #606060 solid;
-	height: 150px;
+	/*height: 150px;*/
 	display: flex;
 	flex-direction: column;
 }
@@ -74,7 +65,7 @@ header#cabecalho-artg {
 }
 div#topo h1 {
 	font-family: 'FonteLogo', cursive;
-	font-size: 18pt;
+	font-size: 20pt;
 	color: #000000;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 	padding: 0px;
@@ -110,11 +101,11 @@ header#cabecalho-artg h3 {
 	text-align: center;
 }
 .direita {
-	border-bottom: 1px #606060 solid;
+	border-bottom: 2px #606060 solid;
 }
 header#cabecalho h1{
 	font-family: 'FonteLogo', cursive;
-	font-size: 26pt;
+	font-size: 28pt;
 	color: #606060;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
 	padding: 0px;
@@ -137,42 +128,63 @@ div#titu h2{
 }
 /* IMAGENS*/
 img#icone {
-	left: 1000px;
-	display: inline-block;
-	width: 300px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 82px;
 }
 /* 
 Formatação do Menu
 */
 nav {	
-	display:flex;
-	flex-direction: column;
+	/*display:flex;
+	flex-direction: column;*/
 	width: 100%;
 
 }
 nav#menu ul {
 	list-style: none;
 	text-transform: uppercase;
-	position: absolute;
-	top: 0px;
+	/*position: absolute;
+	top: 0px;*/
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	text-align: center;
 	align-items: center;
 	width: 100%;
 }
 nav#menu li {
-	display: flex;
-	margin-left: 120px;
+	/*display: flex;
+	margin-left: 120px;*/
 	text-align: center;
 	background-color: white;
-	padding: 10px 10px 10px 10px;
 	transition: background-color 1s;
+}
+button {
+	font-family: arial;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: none;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	padding: 10px 50px 20px 50px;
+}
+button:hover {
+	background-color: #595150;
+	color: #ffffff;
+}
+button:active {
+	position: relative;
+	top: 10px;
 }
 nav#menu li:hover {
 	background-color: #dddddd;
 }
 nav#menu a {
-	display: flex;
+	/*display: flex;*/
 	padding: 10px 0;
 	width: 100%;
 	color: #000000;
@@ -206,7 +218,7 @@ footer#rodape p {
 /*
 Deixando o site responsivo*/
 @media screen and (max-width: 768px) {
-	nav {
+	/*nav {
 		flex-direction: row;
 		justify-content: space-around;
 		width: 70%;
@@ -222,7 +234,16 @@ Deixando o site responsivo*/
 		height: 15vh;
 		justify-content: center;
 
+	} */
+	nav#menu ul {
+		flex-direction: column;
 	}
+	img#icone {
+		position: relative;
+		left: 0px;
+		padding: 0px;
+	}
+
 }
 @media screen and (max-width:1000px) {
 	img#icone {
@@ -239,10 +260,9 @@ Deixando o site responsivo*/
 			padding: 0px;
 			margin-left: 0px;
 		}
-}
-@media screen and (max-width:768px) {
-	header#cabecalho {
-		width: 100%;
+@media screen and (max-width: 768px){
+	header#cabecalho{
 
 	}
+}
 }
