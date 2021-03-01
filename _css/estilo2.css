@@ -158,8 +158,8 @@ nav#menu li {
 	/*display: flex;
 	margin-left: 120px;*/
 	text-align: center;
-	background-color: white;
-	transition: background-color 1s;
+	/*background-color: white;*
+	transition: background-color 1s;*/
 }
 button {
 	font-family: arial;
@@ -171,6 +171,7 @@ button {
 	color: black;
 	cursor: pointer;
 	padding: 10px 50px 20px 50px;
+	border-radius: 19px;
 }
 button:hover {
 	background-color: #595150;
