@@ -57,7 +57,7 @@ header#cabecalho {
 	/*height: 150px;*/
 	display: flex;
 	flex-direction: column;
-	background-image: linear-gradient(to top, blue, white)
+	background-image: linear-gradient(to top, #DCDCDC, white)
 }
 header#cabecalho-artg {
 	display: flex;
@@ -153,6 +153,7 @@ nav#menu ul {
 	text-align: center;
 	align-items: center;
 	width: 100%;
+	background-color: none;
 }
 nav#menu li {
 	/*display: flex;
@@ -171,6 +172,7 @@ button {
 	cursor: pointer;
 	padding: 10px 50px 20px 50px;
 	border-radius: 19px;
+	background-color: transparent;
 }
 button:hover {
 	background-color: #595150;
@@ -181,7 +183,7 @@ button:active {
 	top: 10px;
 }
 nav#menu li:hover {
-	background-color: #dddddd;
+	background-color: #DCDCDC;
 }
 nav#menu a {
 	/*display: flex;*/
