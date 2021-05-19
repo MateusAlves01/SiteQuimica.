@@ -21,13 +21,17 @@ div#interface {
 	padding: 0px;
 	margin: 0px;
 }
+h4, h5 {
+	padding: 0px;
+	margin: 3px;
+}
 p {
 	/*display: flex;*/
 	font-size: 16px;
 	text-align: justify;
 	text-indent: 50px;
-	padding: 10px;
-	margin: 5px;
+	padding: 5px;
+	margin: 0px;
 	font-family: 'Tahoma';
 	line-height: 22px;
 }
