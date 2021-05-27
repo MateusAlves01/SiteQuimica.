@@ -25,6 +25,9 @@ h4, h5 {
 	padding: 0px;
 	margin: 3px;
 }
+li {
+	font-size: 15px;
+}
 p {
 	/*display: flex;*/
 	font-size: 15px;
