@@ -16,8 +16,7 @@ div#interface {
 	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 	padding: 10px 10px 10px 10px;
 }
-}
-*{
+{
 	padding: 0px;
 	margin: 0px;
 }
@@ -158,32 +157,32 @@ nav#menu ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	text-align: center;
-	align-items: center;
+	text-align: auto;
+	align-items: auto;
 	width: 100%;
 	background-color: none;
 }
 nav#menu li {
 	/*display: flex;
 	margin-left: 120px;*/
-	text-align: center;
+	text-align: auto;
 	/*background-color: white;*
 	transition: background-color 1s;*/
-}
+}	
 button {
 	font-family: arial;
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 600;
 	border: none;
 	color: black;
 	cursor: pointer;
-	padding: 10px 50px 20px 50px;
-	border-radius: 19px;
+	padding: 20px;
+	border-radius: 10px;
 	background-color: transparent;
 }
 button:hover {
-	background-color: #595150;
+	background-color: #867c7a;
 	color: #ffffff;
 }
 button:active {
@@ -227,14 +226,14 @@ footer#rodape p {
 }
 .caixa button {
 	
-	padding: 40px;
+	padding: 20px;
 	margin: 30px;
 	border-radius: 10px;
 }
 .caixa button:hover {
 	background-color: black;
 	padding: 50px;
-	font-size: 14pt;
+	font-size: 15pt;
 }
 .caixa button:active {
 	position: relative;
