@@ -94,7 +94,7 @@ header#cabecalho-artg h1{
 	font-size: 15pt;
 	color: #595150;
 	text-align: center;
-	display: flex;*
+	display: flex;
 }
 header#cabecalho-artg h2 {
 	font-size: 13pt;
@@ -146,8 +146,7 @@ Formatação do Menu
 nav {	
 	/*display:flex;
 	flex-direction: column;*/
-	width: 100%;
-
+	width: 98%;
 }
 nav#menu ul {
 	list-style: none;
@@ -162,12 +161,13 @@ nav#menu ul {
 	width: 100%;
 	background-color: none;
 }
-nav#menu li {
-	/*display: flex;
-	margin-left: 120px;*/
+nav#menu li {	
 	text-align: auto;
-	/*background-color: white;*
-	transition: background-color 1s;*/
+	margin-left: -80px;
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }	
 button {
 	font-family: arial;
@@ -179,69 +179,51 @@ button {
 	cursor: pointer;
 	padding: 20px;
 	border-radius: 10px;
-	background-color: transparent;
-}
+	background-color: transparent;}
 button:hover {
 	background-color: #867c7a;
-	color: #ffffff;
-}
+	color: #ffffff;}
 button:active {
 	position: relative;
-	top: 10px;
-}
+	top: 10px;}
 nav#menu li:hover {
-	background-color: #DCDCDC;
-}
+	align-items: center;
+	text-align: center;
+	background-color: #DCDCDC;}
 nav#menu a {
 	/*display: flex;*/
 	padding: 10px 0;
 	width: 100%;
 	color: #000000;
-	text-decoration: none;
-}
+	text-decoration: none; }
 nav#menu a:hover {
 	color: #ffffff;
-	text-decoration: underline;
-}	
-/* 
-
-Roda pé
-
-*/
+	text-decoration: underline;}	
+/* Roda pé*/
 footer#rodape {
 	clear: both;
-	border-top: 1px solid #606060;
-}
+	border-top: 1px solid #606060;}
 footer#rodape p {
-	text-align: center;
-}
+	text-align: center;}
 .tipo1 {
-	color:rgb(100.100.100);
-}
+	color:rgb(100.100.100);}
 .link_ {
-	font-size: 30px;
-}
+	font-size: 30px;}
 .tipo2 {
-	font-size: 40px;
-}
+	font-size: 40px;}
 .caixa button {
-	
 	padding: 20px;
 	margin: 30px;
-	border-radius: 10px;
-}
+	border-radius: 10px;}
 .caixa button:hover {
 	background-color: black;
 	padding: 50px;
-	font-size: 15pt;
-}
+	font-size: 15pt;}
 .caixa button:active {
 	position: relative;
-	top: 10px;
-}
+	top: 10px; }
 
-/*
-Deixando o site responsivo*/
+/* Deixando o site responsivo*/
 @media screen and (max-width: 768px) {
 	/*nav {
 		flex-direction: row;
@@ -260,16 +242,25 @@ Deixando o site responsivo*/
 		justify-content: center;
 
 	} */
-	nav#menu ul {
+	nav#menu ul li {
 		flex-direction: column;
+		display: block;
+		margin: 35px;
+		line-height: 30px;
+	}
+	ul {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		left: -40px;
+		text-align: center;
+	}
 	}
 	img#icone {
 		position: relative;
 		left: 0px;
 		padding: 0px;
 	}
-
-}
 @media screen and (max-width:1000px) {
 	img#icone {
 		position: relative;
@@ -286,8 +277,8 @@ Deixando o site responsivo*/
 			margin-left: 0px;
 		}
 @media screen and (max-width: 768px){
-	header#cabecalho{
-
-	}
-}
-}
+	div#interface {
+		width: 100%;
+		background-color: #ffffff;
+		margin: 0px auto 0px auto;
+		padding: none;
