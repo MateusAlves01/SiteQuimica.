@@ -2,38 +2,106 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Referecias usadas no contéudo Ministrado</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Fale Conosco</title>
+	<link rel="shortcut icon" type="_image/x-icon" href="_imagem/fav.ico">
 	<link rel="stylesheet" type="text/css" href="_css/estilo2.css"/>
 </head>
 <script type="text/javascript" src="/"></script>
-<body>
+<body background="_imagem/fundo.jpg">
 <div id="interface">
-<header id="cabecalho">
-	<hgroup>
-		<figure>
-			<img id="" src="">
-		</figure>
-		
-	</hgroup><!---menu--->
-	<nav id="menu">
-		<ul id="disc">
+<header id="header">
+    <a id="logo" href="">Logo</a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+        <span id="hamburger"></span>
+      </button>
+			<ul id="menu" role="menu">
 				<li class="pri"><a href="index.html">
 				<button>Início</button></a></li>
 				<li class="seg"><a href="experimento.html"><button>Experimentos</button></a></li>
 				<li class="ter"><a href="questoes.html"><button>Questões</button></a></li>
 				<li class="qua"><a href="postes.html"><button>Postes</button></a></li>
 				<li class="qui"><a href="referencia.html"><button>Contato</button></a></li>
-			</ul>
-	</nav>
-		<div id="topo">
-		<h1>A experimentação no ensino da Química</h1>
-		<h2>Utilizando somente materiais <i>Alternativos</i></h2>
-		</div>
+			</ul>	
+		</nav>	
 	</header>
-	<footer>
-		<p>Copyright &copy; 2020 - by Mateus Alves
-		<a href="http://facebook.com/mateusalves" target="_blank">Facebook</a> </p>
-	</footer>
+	 <script src="./script.js"></script>
+			<section id="corpo">
+				<article id="assunto">
+					<header id="cabecalho-artg">
+						<hgroup>
+						<h3>Experimentação > &nbsp; Inovações</h3>
+						<h1>Aprenda a realizar experimentos de 			forma simples !</h1>
+						<h2>por Mateus Alves</h2>
+						<h3 class="direita"></h3>
+						</hgroup>
+	</header>
+
+	<div id="eu">
+		<p> Meu nome é Francisco Mateus Alves de Sousa, sou aluno do IFPB - Campus Sousa. O intuito desse <i>Website</i> é conseguir velar a experimentação no ensino de Química até onde a internet pode alcançar. Com isso, abro esse página para construção colaborativa. Logo abaixo tem algumas caixas para serem preenchidas. Portanto, não deixem de enviar as suas sugestões e seus experimentos para que eu possa dá uma avaliada. Toda e qualquer iformação ou crítica construtiva é bem vinda ! </p>
+<form method="post" id="fContato" action="mailto:axlmxx@gmail.com" oninput="calc_total()">
+	<fieldset id="usuario">
+		<legend>Identificação do Usuário</legend>
+		<p>Nome:<input type="text" name="tNome" id="cNome" size="40" placeholder="Ana de Sousa"></p>
+		<p>E-mail:<input type="email" name="tMail" id="cMail" size="40" placeholder="anasousa@gmail.com"></p>
+		<p>Senha:<input type="password" name="tSenha" id="cSenha" size="40" maxlength="8" placeholder="8 digitos"></p>
+		<fieldset id="sexo"><legend>Sexo:</legend>
+			<input type="radio" name="tSexo" id="cMasc"><label for="cMasc">Masculino</label><br/>
+			<input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label></fieldset>
+		<p><label for="cNasc">Data de nascimento: <input type="date" name="tNasc" id="cNasc"></label></p>
+	</fieldset>
+	<fieldset id="endereco">
+		<legend>Endereço do Usuário</legend>
+		<p><label>Logradouro:</label><input type="text" name="cRua" size="40" maxlength="90" placeholder="Rua, Avenida, Travessa..."></p>
+		<p>Número:<input type="number" name="tNum" id="cNum" min="0" max="99999"></p>
+<p><label> Estado
+<select name="estado">
+<option selected="" value="">Selecione o Estado (UF)</option>
+<option value="Acre">Acre</option>
+<option value="Alagoas">Alagoas</option>
+<option value="Amapá">Amapá</option>
+<option value="Amazonas">Amazonas</option>
+<option value="Bahia">Bahia</option>
+<option value="Ceará">Ceará</option>
+<option value="Distrito Federal">Distrito Federal</option>
+<option value="Espírito Santo">Espírito Santo</option>
+<option value="Goiás">Goiás</option>
+<option value="Maranhão">Maranhão</option>
+<option value="Mato Grosso">Mato Grosso</option>
+<option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+<option value="Minas Gerais">Minas Gerais</option>
+<option value="Pará">Pará</option>
+<option value="Paraíba">Paraíba</option>
+<option value="Paraná">Paraná</option>
+<option value="Pernambuco">Pernambuco</option>
+<option value="Piauí">Piauí</option>
+<option value="Rio de Janeiro">Rio de Janeiro</option>
+<option value="Rio Grande do Sul">Rio Grande do Sul</option>
+<option value="Rio Grande do Norte">Rio Grande do Norte</option>
+<option value="Rondônia">Rondônia</option>
+<option value="Roraima">Roraima</option>
+<option value="Santa Catarina">Santa Catarina</option>
+<option value="São Paulo">São Paulo</option>
+<option value="Sergipe">Sergipe</option>
+<option value="Tocantins">Tocantins</option>
+</select></label></p>
+		<p>Cidade:<input type="text" name="Tcid" id="cCid" placeholder="Sua cidade"></p>
+	</fieldset>
+	<fieldset id="mensagem">
+		<legend>Mensagem do Usuário</legend>
+		<p><label>Grau de Urgência: Min</label><input type="range" name="tUrg" id="cUrg" min="0" max="10" step="5"> Max</p>
+
+		<p><label>Mensagem:</label><textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea> </p>
+	</fieldset>
+	<input type="image" name="tEnviar" src="_imagem/botao-enviar.png">
+</form>
+
+</form>
+	</header>
+	<footer id="rodape">
+		<p>Copyright &copy; 2021 - by Mateus Alves
+		 <a href="https://www.facebook.com/profile.php?id=100045322538037" target="_blank">Facebook</a> <a href="https://www.instagram.com/alvesmateus_1/">Instagram</a> </p>
 </div>
 </body>
 </html>

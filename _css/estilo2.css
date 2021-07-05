@@ -14,7 +14,7 @@ div#interface {
 	background-color: #ffffff;
 	margin: 0px auto 0px auto;
 	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-	padding: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px
 }
 {
 	padding: 0px;
@@ -50,21 +50,12 @@ article#assunto h2{
 	padding: 5px 0px 10px 15px;
 	margin: 15px 0px 15px 0px;
 }
-header {
+/*header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-size: cover;
-	padding: 10px;
-}
-header#cabecalho {
-	display: flex;
-	flex-direction: column;
-	border-bottom: 1px #606060 solid;
-	/*height: 150px;*/
-	display: flex;
-	flex-direction: column;
-	background-image: linear-gradient(to top, #DCDCDC, white)
+	padding: 10px;*/
 }
 header#cabecalho-artg {
 	display: flex;
@@ -110,7 +101,7 @@ header#cabecalho-artg h3 {
 .direita {
 	border-bottom: 2px #606060 solid;
 }
-header#cabecalho h1{
+#topo h1{
 	font-family: 'FonteLogo', cursive;
 	font-size: 28pt;
 	color: #606060;
@@ -118,7 +109,7 @@ header#cabecalho h1{
 	padding: 0px;
 	margin-top: 90px;
 }
-header#cabecalho h2{
+#topo h2{
 	font-family: 'Josefin Web', cursive;
 	font-size: 17pt;
 	color: #606060;
@@ -145,29 +136,37 @@ Formatação do Menu
 */
 nav {	
 	/*display:flex;
-	flex-direction: column;*/
-	width: 98%;
+	flex-direction: column;
+	width: 98%;*/
 }
-nav#menu ul {
-	list-style: none;
-	text-transform: uppercase;
-	/*position: absolute;
-	top: 0px;*/
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	text-align: auto;
-	align-items: auto;
-	width: 100%;
-	background-color: none;
+#btn-mobile {
+	display: none;
 }
-nav#menu li {	
-	text-align: auto;
-	margin-left: -80px;
-	flex-wrap: wrap;
+ul, body {
+	margin: 0px;
+	padding: 0px;
+}
+#logo {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+#header {
+	box-sizing: border-box;
+	height: 70px;
+	padding: 1rem;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	background: #e7e7e7;
+}
+#menu {
+	display: flex;
+	list-style: none;
+	gap: .5rem;
+}
+#menu a {
+	display: block;
+	padding: .5rem;
 }	
 button {
 	font-family: arial;
@@ -186,13 +185,13 @@ button:hover {
 button:active {
 	position: relative;
 	top: 10px;}
-nav#menu li:hover {
+/*nav#menu li:hover {
 	align-items: center;
 	text-align: center;
 	background-color: #DCDCDC;}
 nav#menu a {
 	/*display: flex;*/
-	padding: 10px 0;
+	/*padding: 10px 0;
 	width: 100%;
 	color: #000000;
 	text-decoration: none; }
@@ -211,20 +210,13 @@ footer#rodape p {
 	font-size: 30px;}
 .tipo2 {
 	font-size: 40px;}
-.caixa button {
-	padding: 20px;
-	margin: 30px;
-	border-radius: 10px;}
-.caixa button:hover {
-	background-color: black;
-	padding: 50px;
-	font-size: 15pt;}
-.caixa button:active {
-	position: relative;
-	top: 10px; }
+figure#icones {
+	position: inherit;
+	margin: 10px;
+}
 
 /* Deixando o site responsivo*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 	/*nav {
 		flex-direction: row;
 		justify-content: space-around;
@@ -242,32 +234,72 @@ footer#rodape p {
 		justify-content: center;
 
 	} */
-	nav#menu ul li {
-		flex-direction: column;
-		display: block;
-		margin: 35px;
-		line-height: 30px;
-	}
-	ul {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		left: -40px;
-		text-align: center;
-	}
-	}
-	img#icone {
-		position: relative;
-		left: 0px;
-		padding: 0px;
-	}
-@media screen and (max-width:1000px) {
-	img#icone {
+	
+@media (max-width:600px) {
+	/*img#icone {
 		position: relative;
 		left: 600px;
 		top: 60px;
 
-	}
+	}*/
+	  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
 }
 @media screen and (max-width:1000px){
 		nav ul li {
@@ -282,3 +314,5 @@ footer#rodape p {
 		background-color: #ffffff;
 		margin: 0px auto 0px auto;
 		padding: none;
+	}
+}

@@ -9,26 +9,29 @@
 	<link rel="stylesheet" type="text/css" href="_css/experimento.css">	
 </head>
 <script type="text/javascript" src="_javascript/func.js"></script>
-<body>
+<body background="_imagem/fundo.jpg">
 <div id="interface">
-	<header id="cabecalho">
-		<nav id="menu">
-			<ul id="disc">
+	<header id="header">
+    <a id="logo" href="">Logo</a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+        <span id="hamburger"></span>
+      </button>
+			<ul id="menu" role="menu">
 				<li class="pri"><a href="index.html">
 				<button>Início</button></a></li>
 				<li class="seg"><a href="experimento.html"><button>Experimentos</button></a></li>
 				<li class="ter"><a href="questoes.html"><button>Questões</button></a></li>
 				<li class="qua"><a href="postes.html"><button>Postes</button></a></li>
 				<li class="qui"><a href="referencia.html"><button>Contato</button></a></li>
-			</ul>
-		</nav>
+			</ul>	
+		</nav>	
+	</header>
+	 <script src="./script.js"></script>
 		<div id="topo">
-			<img id="experimento" src="_imagem/experimento.png">
 			<h1> Experimentos com materiais alternativos</h1>
 			<h2> Leve a ciência para o conforto da sua casa ou sala de aula sem precisar de um <i>Labóratorio</i></h2>
-		</div>
-		
-	</header>
+		</div>	
 		<section id="corpo">
 			<article id="assunto">
 				<header id="cabecalho-artg">
@@ -39,22 +42,22 @@
 						<h3 class="direita"></h3>
 					</hgroup>
 		</header>
-				<div class="caixa">
-				<a href="eletroquimica.html"><button> ELETROQUÍMICA</button></a>
-				<a href="solucoes.html"><button> SOLUÇÕES</button></a></button>
-				<a href="gases.html"><button> GÁS IDEAL</button></a>
-				<a href="equilibrio.html"><button> EQUILIBRIO</button></a>
-				<a href="cinetica.html"><button> CINETICA</button></a>
-				</div>
+				<figure id="icones">
+					<a href="cinetica.html"> <img src="_imagem/cinetica.png"></a>
+					<a href="eletroquimica.html"> <img src="_imagem/eletroquimica.png"></a>
+					<a href="equilibrio.html"> <img src="_imagem/equilibrio.png"></a>
+					<a href="gases.html"> <img src="_imagem/termoquimica.png"></a>
+					<a href="solucoes.html"> <img src="_imagem/solucoes.png"></a>
+					
+				</figure>
 				<!----Nessa parte vai entrar um vídeo e logo após uma animação--->
 				<!----<iframe src="https://www.phet.colorado.edu/sims/html/concentration/latest/concentration_pt_Br.html" width="800" height="600" scrolling="no" allowfulscreen:></iframe>--->
 			</article> 		
 		</section>	
 	</header>
 <footer id="rodape">
-		<p>Copyright &copy; 2020 - by Mateus Alves
-		<a href="http://facebook.com/mateusalves" target="_blank">Facebook</a> </p>
-	</footer>
+		<p>Copyright &copy; 2021 - by Mateus Alves
+		 <a href="https://www.facebook.com/profile.php?id=100045322538037" target="_blank">Facebook</a> <a href="https://www.instagram.com/alvesmateus_1/">Instagram</a> </p>
 </div>
 </body>
 </html>
