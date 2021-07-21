@@ -24,8 +24,30 @@ h4, h5 {
 	padding: 0px;
 	margin: 3px;
 }
+.titulo {
+	font-size: 16pt;
+}
 li {
 	font-size: 15px;
+}
+.container {
+	display: flex;
+	align-items: center;
+}
+.eq2{
+	display: none;
+}
+div .fotos {
+ 
+ align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 5px;
+}
+p .p1 {
+	padding: 0px;
 }
 p {
 	/*display: flex;*/
@@ -201,13 +223,28 @@ nav#menu a:hover {
 /* Roda pé*/
 footer#rodape {
 	clear: both;
-	border-top: 1px solid #606060;}
+	border-top: 1px solid #606060;
+	padding: auto;
+}
 footer#rodape p {
-	text-align: center;}
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+.pe {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0px 7px 0px 10;
+}
 .tipo1 {
-	color:rgb(100.100.100);}
+	color:rgb(100.100.100);
+}
 .link_ {
-	font-size: 30px;}
+	font-size: 30px;
+}
 .tipo2 {
 	font-size: 40px;}
 figure#icones {
@@ -236,12 +273,7 @@ figure#icones {
 	} */
 	
 @media (max-width:600px) {
-	/*img#icone {
-		position: relative;
-		left: 600px;
-		top: 60px;
-
-	}*/
+	/*Menu Mobile*/
 	  #menu {
     display: block;
     position: absolute;
@@ -299,7 +331,38 @@ figure#icones {
     transform: rotate(-135deg);
     top: -7px;
   }
-}
+
+  div.container {
+  	display: inline;
+  }
+  .eq1 {
+  	display: none;
+  }
+  .eq2 {
+  	margin-left: auto;
+  	margin-right: auto;
+  	display: block;	
+  }
+  .lado{
+  	margin-left: auto;
+  	margin-right: auto;
+  	display: block;
+  }
+  footer#rodape {
+  	display: inline;
+  }
+  .pe {
+  	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  img {
+	width: 100%;
+ }
+
+
 }
 @media screen and (max-width:1000px){
 		nav ul li {
@@ -315,4 +378,5 @@ figure#icones {
 		margin: 0px auto 0px auto;
 		padding: none;
 	}
+
 }
