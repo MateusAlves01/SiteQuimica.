@@ -4,9 +4,12 @@
 	font-family: 'FonteLogo';
 	src: url("../_fontes/JosefinSans-Italic-VariableFont_wght.ttf");
 }
+iframe{
+	align-items: center;
+}
 body {
-	font-family: Arial;
-	background-color: white;
+	font-family: mongolian;
+	background-color:whitesmoke;
 	color: rgba(1,1,1,1);
 }
 div#interface {
@@ -16,10 +19,7 @@ div#interface {
 	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 	padding: 10px 10px 10px 10px
 }
-{
-	padding: 0px;
-	margin: 0px;
-}
+
 h4, h5 {
 	padding: 0px;
 	margin: 3px;
@@ -37,9 +37,21 @@ li {
 .eq2{
 	display: none;
 }
+figcaption{
+	font-size: small;
+	text-align: center;
+}
+div .fotos1{
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 5px;
+	width: 300px;
+	}
 div .fotos {
- 
- align-items: center;
+	
+ 	align-items: center;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -51,18 +63,18 @@ p .p1 {
 }
 p {
 	/*display: flex;*/
-	font-size: 0.9em;
+	font-size: 15px;
 	text-align: justify;
 	text-indent: 50px;
 	padding: 5px;
-	margin: 0px;
+	margin: 14px;
 	font-family: 'Tahoma';
 	line-height: 22px;
 }
 a {
 	color: #606060;
 	text-decoration: none;
-	font-size: 0.9em;
+	font-size: 12pt;
 }
 a:hover {
 	text-decoration: underline;
@@ -72,20 +84,14 @@ article#assunto h2{
 	padding: 5px 0px 10px 15px;
 	margin: 15px 0px 15px 0px;
 }
-/*header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-size: cover;
-	padding: 10px;*/
-}
+
 header#cabecalho-artg {
 	display: flex;
 	flex-direction: column;
 }
-div#topo h1, h2 {
+div#topo h1 {
 	font-family: 'FonteLogo', cursive;
-	font-size: 2 em;
+	font-size: 20pt;
 	color: #000000;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 	padding: 0px;
@@ -93,12 +99,12 @@ div#topo h1, h2 {
 	font-variant: small-caps;
 	 /* DEIXA TODAS AS LETRAS COM TAMANHO GRANDE*/
 }
-/*div#topo h2 {
+div#topo h2 {
 	font-family: Arial, sans-serif;
 	color: #000000;
 	font-size: 18pt;
 	padding: 2px;
-	margin-top: 0px; */
+	margin-top: 0px;
 }
 header#cabecalho-artg h1{
 	font-family: arial, sans-serif;
@@ -156,33 +162,24 @@ img#icone {
 /* 
 Formatação do Menu
 */
-nav {	
-	/*display:flex;
-	flex-direction: column;
-	width: 98%;*/
-}
+
 #btn-mobile {
 	display: none;
+}
+input{
+	border-radius: 5px;
 }
 ul, body {
 	margin: 0px;
 	padding: 0px;
 }
-div#ponto {
-	margin-left: 10px;
-}
 #logo {
 	font-size: 1.5em;
 	font-weight: bold;
+	height: 65px;
 }
-/*imagem da logo*/
-#logoo {
-	display: flex;
-	padding: auto;
-	margin: -20px -20px -25px;
-}
-
 #header {
+	border-radius: 5px;
 	box-sizing: border-box;
 	height: 70px;
 	padding: 1rem;
@@ -216,20 +213,8 @@ button:hover {
 	color: #ffffff;}
 button:active {
 	position: relative;
-	top: 10px;}
-/*nav#menu li:hover {
-	align-items: center;
-	text-align: center;
-	background-color: #DCDCDC;}
-nav#menu a {
-	/*display: flex;*/
-	/*padding: 10px 0;
-	width: 100%;
-	color: #000000;
-	text-decoration: none; }
-nav#menu a:hover {
-	color: #ffffff;
-	text-decoration: underline;}	
+	top: 10px;
+}
 /* Roda pé*/
 footer#rodape {
 	clear: both;
@@ -261,37 +246,25 @@ figure#icones {
 	position: inherit;
 	margin: 10px;
 }
-div.gasmobile {
-	display: none;
-}
-div.gasdesk {
-		margin-left: auto;
-  	margin-right: auto;
-  	display: block;
 
+/*Video respodivo*/
+.VideoPlay {
+	position:relative;
+	width: 100%;
+	padding-bottom: 56%;
+	padding-right: 0%;
+} 
+.VideoPlay iframe {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	border: none;
+	align-items: center;
 }
-
 /* Deixando o site responsivo*/
-@media screen and (max-width: 600px) {
-	/*nav {
-		flex-direction: row;
-		justify-content: space-around;
-		width: 70%;
-		top: 10px;
-	}
-	nav ul li a {
-		flex-direction: row
-		width: 100%;
-
-	}
-	header {
-		height: 15px;
-		height: 15vh;
-		justify-content: center;
-
-	} */
-	
-@media (max-width:600px) {
+@media screen and (max-width: 1000px) {
+		
+@media (max-width:1000px) {
 	/*Menu Mobile*/
 	  #menu {
     display: block;
@@ -371,27 +344,16 @@ div.gasdesk {
   	display: inline;
   }
   .pe {
-  align-items: center;
+  	align-items: center;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
   }
-  img {
-	width: 100%;
- }
- div.gasmobile {
-  	margin-left: auto;
-  	margin-right: auto;
-  	display: block;	
- }
- div.gasdesk {
- 	display: none;
- }
-
-
+  
 
 }
+
 @media screen and (max-width:1000px){
 		nav ul li {
 			display: block;
@@ -399,6 +361,7 @@ div.gasdesk {
 			padding: 0px;
 			margin-left: 0px;
 		}
+}
 @media screen and (max-width: 768px){
 	div#interface {
 		width: 100%;
@@ -406,5 +369,7 @@ div.gasdesk {
 		margin: 0px auto 0px auto;
 		padding: none;
 	}
+
+}
 
 }
