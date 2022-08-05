@@ -63,7 +63,7 @@ p .p1 {
 }
 p {
 	/*display: flex;*/
-	font-size: 15px;
+	font-size: 1em;
 	text-align: justify;
 	text-indent: 50px;
 	padding: 5px;
@@ -74,7 +74,7 @@ p {
 a {
 	color: #606060;
 	text-decoration: none;
-	font-size: 12pt;
+	font-size: 1em;
 }
 a:hover {
 	text-decoration: underline;
@@ -90,7 +90,7 @@ header#cabecalho-artg {
 	flex-direction: column;
 }
 div#topo h1 {
-	font-family: 'FonteLogo', cursive;
+	font-family: sans-serif;
 	font-size: 20pt;
 	color: #000000;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
@@ -260,6 +260,21 @@ figure#icones {
 	height: 50%;
 	border: none;
 	align-items: center;
+}
+div.video {
+	background-color: #f9f8f8;
+	margin: 0px -10px 30px -20;
+	padding: 20px;
+	position: relative;
+	padding-bottom: 57%;
+}
+div.video > iframe {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+
 }
 /* Deixando o site responsivo*/
 @media screen and (max-width: 1000px) {
