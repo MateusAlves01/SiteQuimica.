@@ -90,7 +90,7 @@ header#cabecalho-artg {
 	flex-direction: column;
 }
 div#topo h1 {
-	font-family: 'FonteLogo', cursive;
+	font-family: sans-serif;
 	font-size: 20pt;
 	color: #000000;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
